@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+h2{
+	text-align: center;
+}
+/* Create three equal columns that floats next to each other */
+h3{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 2px;
+  padding-left: 5px;
+  width: 150px;
+  text-decoration-color: black;
+}
+p{
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: justify-all;
+
+}
+
+.column1{
+  float: left;
+  width: 33%;
+  padding: 0px;
+  border: 2px solid black;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.column2{
+  float: left;
+  width: 33%;
+  padding: 0px;
+  border: 2px solid black;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.column3{
+  float: left;
+  width: 33%;
+  padding: 0px;
+  height: 200px; /* Should be removed. Only for demonstration */
+  border: 2px solid black;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 480px)
+{
+ #leftsidebar{
+    width: 200px;
+    float: left;
+ }
+
+}
+
+</style>
+</head>
+<body>
+
+<h2>Menu</h2>
+
+<div class="row">
+  <div class="column1" style="background-color:lightgrey;">
+    <h3 style="background-color: pink">Chicken</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+  <div class="column2" style="background-color:lightgrey;">
+    <h3 style="background-color: red">Beef</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+  <div class="column3" style="background-color:lightgrey;">
+    <h3 style="background-color: yellow">Shushi</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+  </div>
+</div>
+
+</body>
+</html>
